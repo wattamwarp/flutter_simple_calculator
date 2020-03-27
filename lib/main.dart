@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart';
 
 void main() => runApp(new MyApp());
 
 
 class MyApp extends StatelessWidget{
   @override
-int a=0,b=0,c=102,d=255;
   Widget build(BuildContext context) {
 
     return new MaterialApp(
       title: "the calculator app",
-      theme: new ThemeData(
-      ),
-
+      theme: new ThemeData(primarySwatch: Colors.blue),
+      home:  new HomePage(),
     );
   }
-
 }
